@@ -7,4 +7,25 @@ android {
     lintOptions {
         abortOnError false
     }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile 'com.android.support:support-v4:19.0.+'
+        compile 'com.squareup.picasso:picasso:2.2.0'
+        compile 'com.squareup.okhttp:okhttp:1.5.4'
+    }
+
+    productFlavors {
+        picasso {
+        }
+
+        gogh {
+            packageName "org.gdgkoradandroid.gogh"
+            versionCode 1
+            versionName "1.0.0"
+        }
+    }
 }

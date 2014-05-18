@@ -1,0 +1,38 @@
+Gradle 이란?
+빌드 툴 = 설정(정적) + 빌드(동적)
+Ant = 빌드에 초첨
+Maven = 설정에 초점
+이것을 해결하기 위해 나온 것이 Gradle. Groovy 언어를 써서 동적이면서 정적인(DSL) 면을 커버할 수 있게.
+
+
+Groovy 이란?
+문법 참고 : http://springsource.tistory.com/85 
+
+- version 정보다 sdk 설정 값을 manifest가 아니라 build.gradle에 적어서 관리하는 추세다.
+
+- gradle assembleRelease -> 배포용 만드는 것 == gradle aR(task 명이 길 경우 이렇게 줄여서 적어도 됨. task 이름들안에 해당 철자가 들어있는 task를 수행함)
+
+- 공개프로젝트일 경우 travis 를 사용하는 것도 좋다. 비공개 프로젝트일 경우 jenkins가 좋다.
+
+- flavor라는 기능을 이용해서 multi-apk를 만들어 낼 수 있다.
+
+- gradle task 명령을 이용해 현재 사용할 수 있는 task 목록을 보여준다.
+
+- android studio에서는 왼쪽 하단에 Build Variant 를 사용해서 빌드할 flavor를 설정할 수 있다.
+
+수업 절차
+1. https://github.com/JuL1205/GradleCodeLab 다운.
+2. ApiDemos에 build.gradle 파일 추가.
+3. cmd에 "gradle build" 로 빌드 확인
+4. Piccaso 프로젝트를 flavor를 이용해서 2개의 apk로 나눠서 빌드 함.
+5. 서명은 알아서 해보도록?!
+
+
+
+[참고 자료]
+- http://kwonnam.pe.kr/wiki/gradle
+- http://tools.android.com/tech-docs/new-build-system/user-guide
+- http://www.vogella.com/turorials/AndroidBuild/article.html
+
+[테스트 참고]
+- https://github.com/JuL1205/GradleCodeLab
